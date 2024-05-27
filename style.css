@@ -1,0 +1,199 @@
+/* Estilos gerais */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Fonte mais moderna e legível */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Cor de fundo mais suave */
+  color: #333;
+  line-height: 1.6; /* Melhora a legibilidade do texto */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #ff7f0e; /* Cor de destaque (laranja) */
+  color: #fff;
+  text-align: center;
+  padding: 25px 0;
+}
+
+header h1 {
+  margin: 0; /* Remove a margem padrão do h1 */
+}
+
+/* Seções principais (Sobre Mim e Portfólio) */
+.intro, 
+.portfolio,
+.contact { /* Adiciona a seção de contato */
+  background-color: #fff;
+  padding: 30px;
+  margin: 20px auto; /* Centraliza as seções */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px; /* Limita a largura máxima para telas maiores */
+}
+
+.intro h2,
+.portfolio h2,
+.contact h2 {
+  color: #ff7f0e; /* Cor de destaque (laranja) nos títulos */
+  border-bottom: 2px solid #eee;
+  padding-bottom: 10px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+/* Formulário de Contato */
+.contact form {
+  display: grid;
+  gap: 15px;
+}
+
+.form-group { /* Agrupa os campos do formulário */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button[type="submit"] {
+  background-color: #ff7f0e;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/* Estilos para links */
+a {
+  color: #ff7f0e;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Adiciona uma transição suave na cor */
+}
+
+a:hover {
+  color: #f0540c; /* Cor mais escura ao passar o mouse */
+}
+/* Grid para a seção "Sobre Mim" */
+.profile-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* 1 coluna para a foto, 2 colunas para o texto */
+  gap: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%; /* Faz a foto ficar redonda */
+}
+
+/* Grid para os projetos */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsivo, se ajusta ao tamanho da tela */
+  gap: 20px;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+/* Formulário de Contato */
+.contact-form { 
+  display: grid;
+  gap: 15px;
+  max-width: 400px; /* Ajuste conforme necessário */
+  margin: 0 auto; /* Centraliza o formulário */
+}
+
+.form-group { /* Agrupa os campos do formulário */
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact button[type="submit"] {
+  background-color: #ff7f0e; /* Cor de destaque (laranja) */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* ... (estilos anteriores) ... */
+
+/* Formulário de Contato */
+.contact-form textarea { /* Estilos para a área de texto da mensagem */
+  resize: vertical; /* Permite redimensionar apenas na vertical */
+}
+/* ... (estilos anteriores) ... */
+
+.agradecimento {
+  text-align: center;
+  padding: 50px;
+}
+
+.agradecimento p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+/* ... (outros estilos) ... */
+
+.transition-element {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Define as propriedades da transição (opacidade e transformação) */
+}
+
+.transition-element:hover {
+  opacity: 0.8; /* Diminui a opacidade ao passar o mouse */
+  transform: translateY(-5px); /* Move o elemento para cima */
+}
+/* ... (outros estilos) ... */
+
+/* Estilos para os links sociais */
+.social-links {
+  text-align: center; /* Centraliza os ícones */
+  margin-top: 10px; /* Adiciona um espaçamento acima dos ícones */
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px; /* Espaçamento entre os ícones */
+  font-size: 1.5em; /* Tamanho dos ícones */
+  color: #fff; /* Cor dos ícones (branco) */
+  transition: color 0.3s ease; /* Transição suave na cor */
+}
+
+.social-links a:hover {
+  color: #ccc; /* Cor mais clara ao passar o mouse */
+}
